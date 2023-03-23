@@ -1,3 +1,4 @@
+//REVERSE POLISH NOTATION
 #include <iostream>
 #include <cassert>
 #include <string>
@@ -5,7 +6,7 @@
 using namespace std;
 
 const int MAX_S = 100;
-bool corect_data(string example)
+bool corect_data(string example) //check correct data
 {
     int space=0, operat=0;
     for(int i=0;i<example.size();i++)
@@ -47,7 +48,7 @@ int main() {
     
     do
     {
-      getline(cin,command);  
+      getline(cin,command);  //input format etc. 3 5 +
     }
     while(corect_data(command)==0);
     
@@ -60,7 +61,7 @@ int main() {
         if(command[i]!=' ' and command[i]!='+' and command[i]!='-' and command[i]!='*' and command[i]!='/')
         {
         
-        var+=command[i];
+        var+=command[i]; 
         }
         else if(command[i]==' ')
         {
